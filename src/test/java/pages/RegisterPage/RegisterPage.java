@@ -16,4 +16,11 @@ public class RegisterPage extends BasePage {
         return instance;
     }
 
+
+
+
+
+
+
+
 }

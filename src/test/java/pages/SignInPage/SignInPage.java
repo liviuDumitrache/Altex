@@ -21,11 +21,10 @@ public class SignInPage extends BasePage {
     }
 
     private By logo = By.xpath("//a[@class='Header-logo block bg-no-repeat ']");
-    private By contButton = By.xpath("//span[@class='jsx-9d04a24ff8b4af87 SessionMyCartText hidden sm:block leading-18.2 -tracking-0.29']");
+    private By contButton = By.xpath("//span [text()='Cont']");
     private By emailField = By.xpath("//input[@label='Introdu adresa de email']");
     private By passwordField = By.xpath("//input[@name='password']");
-
-
+    private By autentificareButton = By.xpath("//button[@type='submit']/span/span[text()='Autentificare']");
 
 
 
@@ -35,28 +34,25 @@ public class SignInPage extends BasePage {
     }
 
 
-    public void clickcontButton() {
+    public void clickContButton() {
         LOG.info("Click 'Cont' button");
         driver.findElement(contButton).click();
     }
 
-    public void insertEmail(String Email ){
+    public void insertEmail(String Email) {
         LOG.info("Imput 'Email' in field");
         driver.findElement(emailField).sendKeys(Email);
     }
 
-    public void insertPassword(String Password){
+    public void insertPassword(String Password) {
         LOG.info("imput 'Password' in field ");
         driver.findElement(passwordField).sendKeys(Password);
     }
 
-
-
-
-
-
-
-
+    public void clickAutentificareButton() {
+        LOG.info("Click 'Autentificare' button");
+        driver.findElement(autentificareButton).click();
+    }
 
 
 

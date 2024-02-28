@@ -15,7 +15,7 @@ public class RegisterTest extends BaseTest {
     String prenume = "Ion";
     String nume = "Popescu";
     String email = "maroha2658@huizk.com";
-    String phone = "0745123456";
+    String numarDeTelefon = "0745123456";
     String parola = "Parola1";
 
     @Test
@@ -31,6 +31,12 @@ public class RegisterTest extends BaseTest {
 
         LOG.info("Type in Nume");
         registerPage.insertPrenume(nume);
+
+        LOG.info("Type in Email Adress");
+        registerPage.insertEmailAdress(email);
+
+        LOG.info("Type in Numar de Telefon");
+        registerPage.insertNumarDeTelefon(numarDeTelefon);
 
 
 

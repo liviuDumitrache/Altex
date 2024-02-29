@@ -18,12 +18,12 @@ public class RegisterPage extends BasePage {
         return instance;
     }
 
-    private By inregistrareButton = By.xpath("//div/a[@class='underline hover:text-bleu-hover text-red-brand text-sm leading-15.6']");
+    private By inregistrareButton = By.xpath("//a[text()='Inregistrare']");
     private By imputPrenume = By.xpath("//input[@name='first_name']");
     private By imputNume = By.xpath("//input[@name='last_name']");
     private By imputEmailAdress = By.xpath("//input[@autocomplete='off']");
     private By numar = By.xpath("//input[@name='telephone']");
-    private By parola1 = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/main[1]/div[1]/section[1]/form[1]/div[5]/input[1]");
+    private By parola1 = By.xpath("//form[@class='text-sm ']//input[@name='password']");
     private By parola2 = By.xpath("//input[@name='password_confirm']");
 
 
@@ -55,7 +55,10 @@ public class RegisterPage extends BasePage {
     public void insertParola(String parola){
         LOG.info("Insert parola");
         driver.findElement(parola1).sendKeys(parola);
+        driver.findElement(parola2).sendKeys(parola);
     }
+
+
 
 
 

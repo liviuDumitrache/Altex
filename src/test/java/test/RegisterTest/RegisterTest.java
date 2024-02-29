@@ -29,6 +29,7 @@ public class RegisterTest extends BaseTest {
         LOG.info("Type in Prenume");
         registerPage.insertPrenume(prenume);
 
+
         LOG.info("Type in Nume");
         registerPage.insertPrenume(nume);
 
@@ -37,6 +38,11 @@ public class RegisterTest extends BaseTest {
 
         LOG.info("Type in Numar de Telefon");
         registerPage.insertNumarDeTelefon(numarDeTelefon);
+
+        LOG.info("Type in parola");
+        registerPage.insertParola(parola);
+
+
 
 
 

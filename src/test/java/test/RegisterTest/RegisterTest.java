@@ -5,8 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 import test.BaseTest;
 
-import static pages.BasePage.driver;
-import static pages.BasePage.getBaseUrl;
+import static pages.BasePage.*;
 
 public class RegisterTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(RegisterTest.class);
@@ -42,9 +41,21 @@ public class RegisterTest extends BaseTest {
         LOG.info("Type in parola");
         registerPage.insertParola(parola);
 
+        LOG.info("Click agree terms");
+        registerPage.clickAgreeTerms();
+
+        LOG.info("Click intregistrare button");
+        registerPage.clickRegister();
+
+        signInPage.clickContButton();
 
 
 
+
+
+
+
+        sleep(2000L);
 
     }
 

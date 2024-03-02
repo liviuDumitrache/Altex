@@ -33,6 +33,10 @@ public class SignInTest extends BaseTest {
 
 
 
+//        LOG.info("Click ;Iesi din cont' button");
+//        signInPage.clickIesiDinCont();
+
+
     }
 
 

@@ -25,6 +25,9 @@ public class RegisterPage extends BasePage {
     private By numar = By.xpath("//input[@name='telephone']");
     private By parola1 = By.xpath("//form[@class='text-sm ']//input[@name='password']");
     private By parola2 = By.xpath("//input[@name='password_confirm']");
+    private By agreeTerms = By.xpath("//input[@name='agree_terms']");
+    private By register = By.xpath("//span[text()='Inregistrare']");
+
 
 
     public void clickInregistrareButton() {
@@ -37,34 +40,36 @@ public class RegisterPage extends BasePage {
         driver.findElement(imputPrenume).sendKeys(prenume);
     }
 
-    public void insertNume(String nume){
+    public void insertNume(String nume) {
         LOG.info("Insert nume");
         driver.findElement(imputNume).sendKeys(nume);
     }
 
-    public void insertEmailAdress(String email){
-    LOG.info("Insert email adress");
-    driver.findElement(imputEmailAdress).sendKeys(email);
+    public void insertEmailAdress(String email) {
+        LOG.info("Insert email adress");
+        driver.findElement(imputEmailAdress).sendKeys(email);
     }
 
-    public void insertNumarDeTelefon(String numarDeTelefon){
+    public void insertNumarDeTelefon(String numarDeTelefon) {
         LOG.info("Insert Numar de Telefon");
         driver.findElement(numar).sendKeys(numarDeTelefon);
     }
 
-    public void insertParola(String parola){
+    public void insertParola(String parola) {
         LOG.info("Insert parola");
         driver.findElement(parola1).sendKeys(parola);
         driver.findElement(parola2).sendKeys(parola);
     }
 
+    public void clickAgreeTerms() {
+        LOG.info("Click agree terms");
+        driver.findElement(agreeTerms);
+    }
 
-
-
-
-
-
-
+    public void clickRegister() {
+        LOG.info("Click inregistrare button");
+        driver.findElement(register);
+    }
 
 
 

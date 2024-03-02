@@ -25,6 +25,7 @@ public class SignInPage extends BasePage {
     private By emailField = By.xpath("//input[@label='Introdu adresa de email']");
     private By passwordField = By.xpath("//input[@name='password']");
     private By autentificareButton = By.xpath("//button[@type='submit']/span/span[text()='Autentificare']");
+    private By iesiDinCont = By.xpath("//a[text()='Iesi din cont']");
 
 
 
@@ -53,6 +54,13 @@ public class SignInPage extends BasePage {
         LOG.info("Click 'Autentificare' button");
         driver.findElement(autentificareButton).click();
     }
+
+
+
+//    public void  clickIesiDinCont(){
+//        LOG.info("Click 'Iesi din cont' button");
+//        driver.findElement(iesiDinCont).click();
+//    }
 
 
 

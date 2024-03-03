@@ -5,11 +5,13 @@ import org.testng.annotations.BeforeSuite;
 import pages.BasePage;
 import pages.SignInPage.SignInPage;
 import pages.RegisterPage.RegisterPage;
+import pages.UseFilterPage.UseFilterPage;
 
 
 public class BaseTest {
     public SignInPage signInPage = SignInPage.getInstance();
     public RegisterPage registerPage = RegisterPage.getInstance();
+    public UseFilterPage useFilterPage = UseFilterPage.getInstance();
 
 
 

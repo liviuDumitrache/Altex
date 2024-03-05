@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 import test.BaseTest;
 
-import static pages.BasePage.*;
+import static pages.BasePage.getBaseUrl;
 
 public class UseFilterTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(UseFilterTest.class);
@@ -19,18 +19,21 @@ public class UseFilterTest extends BaseTest {
         useFilterPage.clickHamburgerButton();
     }
 
-    public void clickTvAudioFotoButton(){
+    public void clickTvAudioFotoButton() {
         useFilterPage.clickTvAudioFotoButton();
     }
 
-    public void  clickTelevizoareButton(){
+    public void clickTelevizoareButton() {
         useFilterPage.clickTelevizoareButton();
     }
 
-    public void clickFiltreazaButton(){
+    public void clickFiltreazaButton() {
         useFilterPage.clickFiltreazaButton();
     }
 
+    public void clickPretFilterButton() {
+        useFilterPage.clickPretFilterButton();
+    }
 
 
 }

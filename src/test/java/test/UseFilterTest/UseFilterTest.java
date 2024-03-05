@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import test.BaseTest;
 
 import static pages.BasePage.getBaseUrl;
+import static pages.BasePage.sleep;
 
 public class UseFilterTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(UseFilterTest.class);
@@ -13,27 +14,46 @@ public class UseFilterTest extends BaseTest {
 
 
     @Test
+            public void useFilter(){
 
-    public void clickHambugerButton() {
+        sleep(1000);
+
+        LOG.info("Pres permite toate");
+        signInPage.pressPermiteToate();
+
+
         LOG.info("Click hamburger button");
         useFilterPage.clickHamburgerButton();
-    }
 
-    public void clickTvAudioFotoButton() {
+        LOG.info("Click 'TV,Audio-Video,Foto' button");
         useFilterPage.clickTvAudioFotoButton();
-    }
 
-    public void clickTelevizoareButton() {
+        LOG.info("Click 'Televizoare' button");
         useFilterPage.clickTelevizoareButton();
+
+        LOG.info("Click in stoc button");
+        useFilterPage.clickInStocButton();
+
+        LOG.info("Click pret filter");
+        useFilterPage.clickPretFilter();
+
+        LOG.info("Click SAMSUNG brand filter");
+        useFilterPage.clickBrandFilter();
+
+
+
+
+
+
+
+
     }
 
-    public void clickFiltreazaButton() {
-        useFilterPage.clickFiltreazaButton();
-    }
 
-    public void clickPretFilterButton() {
-        useFilterPage.clickPretFilterButton();
-    }
+
+
+
+
 
 
 }

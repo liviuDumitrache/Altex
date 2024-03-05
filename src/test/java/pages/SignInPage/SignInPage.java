@@ -26,12 +26,19 @@ public class SignInPage extends BasePage {
     private By passwordField = By.xpath("//input[@name='password']");
     private By autentificareButton = By.xpath("//button[@type='submit']/span/span[text()='Autentificare']");
     private By iesiDinCont = By.xpath("//a[text()='Iesi din cont']");
+    private By permiteCookies = By.xpath("//button[text()='Permite toate']");
 
 
 
     public boolean isLogoDisplayed() {
         LOG.info("Very if logo image is displayed");
         return driver.findElement(logo).isDisplayed();
+    }
+
+    public void pressPermiteToate(){
+        LOG.info("Press permite toate");
+        driver.findElement(permiteCookies).click();
+
     }
 
 
@@ -57,6 +64,8 @@ public class SignInPage extends BasePage {
 
 
 
+
+//
 //    public void  clickIesiDinCont(){
 //        LOG.info("Click 'Iesi din cont' button");
 //        driver.findElement(iesiDinCont).click();

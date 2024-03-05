@@ -16,12 +16,13 @@ public class UseFilterPage extends BasePage {
         return instance;
     }
 
-    private By hamburgerButton = By.id("MobileMenuTriggerButton");
-    private By tvAudioFoto = By.xpath("//a[@style='font-size:15px;line-height:36px'][text()='TV, Audio-Video, Foto']");
-    private By televizoare = By.xpath("//li[@class='ml-4']/a[text()='Televizoare']");
-    private By filtreaza = By.xpath("//button[.='Filtreaza']");
-    private By pretFilter = By.xpath("//div[@class='text-14px'][text()='Pret']");
-    private By range1000_1500 = By.xpath("//ul[@class='mb-8']/li[3]//span[@class='checkbox-control inline-block align-top w-5 h-5 p-1 mr-2 border-gray-light border rounded-4px bg-white ']");
+    private By hamburgerButton = By.xpath("//span[text()='Produse']/parent::a");
+    private By tvAudioFoto = By.xpath("//a[@style='padding-top:8px;padding-bottom:7px;line-height:17px'][text()='TV, Audio-Video, Foto']");
+    private By televizoare = By.xpath("//a[@style='line-height:21px;padding-bottom:9px'][text()='Televizoare']");
+    private By inStocFilter = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/main[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/ul[1]/li[1]/a[1]/span[1]");
+    private By pretFilter = By.xpath("//body/div[@id='__next']/div[@class='content-wrapper relative grow flex flex-col justify-between']/div[@class='container']/main[@class='flow-root']/div[@class='lg:flex']/div[1]");
+    private By brandFilter = By.xpath("//body/div[@id='__next']/div[@class='content-wrapper relative grow flex flex-col justify-between']/div[@class='container']/main[@class='flow-root']");
+
 
 
     public void clickHamburgerButton() {
@@ -39,22 +40,31 @@ public class UseFilterPage extends BasePage {
         driver.findElement(televizoare).click();
     }
 
-    public void clickFiltreazaButton(){
-        LOG.info("Click 'Filtreaza' button");
-        driver.findElement(filtreaza).click();
+    public void clickInStocButton(){
+        LOG.info("Click in stoc button");
+        driver.findElement(inStocFilter).click();
     }
 
-    public void clickPretFilterButton(){
-        LOG.info("Click 'Pret' filter");
+    public void clickPretFilter(){
+        LOG.info("Click ptret filter");
         driver.findElement(pretFilter).click();
     }
 
+    public void clickBrandFilter(){
+        LOG.info("Click SAMSUNG brand filter");
+        driver.findElement(brandFilter).click();
+    }
+
+
+
+    }
 
 
 
 
 
 
-}
+
+
 
 

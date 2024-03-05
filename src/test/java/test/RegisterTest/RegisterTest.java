@@ -20,6 +20,10 @@ public class RegisterTest extends BaseTest {
     @Test
 
     public void register(){
+        sleep(1000);
+        LOG.info("Pres permite toate");
+        signInPage.pressPermiteToate();
+
         signInPage.clickContButton();
 
         LOG.info("Click 'Inregistrare' button ");
@@ -30,7 +34,7 @@ public class RegisterTest extends BaseTest {
 
 
         LOG.info("Type in Nume");
-        registerPage.insertPrenume(nume);
+        registerPage.insertNume(nume);
 
         LOG.info("Type in Email Adress");
         registerPage.insertEmailAdress(email);
@@ -41,16 +45,22 @@ public class RegisterTest extends BaseTest {
         LOG.info("Type in parola");
         registerPage.insertParola(parola);
 
+        sleep(5000);
+
         LOG.info("Click agree terms");
         registerPage.clickAgreeTerms();
 
         LOG.info("Click intregistrare button");
         registerPage.clickRegister();
 
-        signInPage.clickContButton();
+        sleep(5000);
 
-
-
+//        signInPage.clickContButton();
+//
+//        sleep(5000);
+//
+//        LOG.info("Click iesi din cont");
+//        registerPage.clickIesiDinCont();
 
 
 

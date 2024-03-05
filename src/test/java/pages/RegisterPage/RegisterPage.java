@@ -25,8 +25,9 @@ public class RegisterPage extends BasePage {
     private By numar = By.xpath("//input[@name='telephone']");
     private By parola1 = By.xpath("//form[@class='text-sm ']//input[@name='password']");
     private By parola2 = By.xpath("//input[@name='password_confirm']");
-    private By agreeTerms = By.xpath("//input[@name='agree_terms']");
+    private By agreeTerms = By.xpath("//span[@class='checkbox-control flex-none w-5 h-5 p-1 mr-2 border-gray-light border rounded-4px bg-white is-required']");
     private By register = By.xpath("//span[text()='Inregistrare']");
+    private By iesiDinCont = By.xpath("//a[text()='Iesi din cont']");
 
 
 
@@ -63,13 +64,18 @@ public class RegisterPage extends BasePage {
 
     public void clickAgreeTerms() {
         LOG.info("Click agree terms");
-        driver.findElement(agreeTerms);
+        driver.findElement(agreeTerms).click();
     }
 
     public void clickRegister() {
         LOG.info("Click inregistrare button");
-        driver.findElement(register);
+        driver.findElement(register).click();
     }
+
+//    public void clickIesiDinCont(){
+//        LOG.info("Click iesi din cont");
+//        driver.findElement(iesiDinCont).click();
+//    }
 
 
 

@@ -11,11 +11,11 @@ public class RegisterTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(RegisterTest.class);
     private String newUrl = getBaseUrl() + "Register.html";
 
-    String prenume = "Ion";
-    String nume = "Popescu";
-    String email = "maroha2658@huizk.com";
-    String numarDeTelefon = "0745123456";
-    String parola = "Parola1";
+    String prenume = "Florin";
+    String nume = "Pop";
+    String email = "vefidox922@aersm.com";
+    String numarDeTelefon = "0745113679";
+    String parola = "Parola123";
 
     @Test
 

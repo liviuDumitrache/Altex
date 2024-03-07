@@ -2,6 +2,7 @@ package test.UseFilterTest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import test.BaseTest;
 
@@ -28,17 +29,42 @@ public class UseFilterTest extends BaseTest {
         LOG.info("Click 'TV,Audio-Video,Foto' button");
         useFilterPage.clickTvAudioFotoButton();
 
+
+
         LOG.info("Click 'Televizoare' button");
         useFilterPage.clickTelevizoareButton();
+
+        sleep(1000);
 
         LOG.info("Click in stoc button");
         useFilterPage.clickInStocButton();
 
+        sleep(1000);
+
+
         LOG.info("Click pret filter");
         useFilterPage.clickPretFilter();
 
+        sleep(2000);
+
         LOG.info("Click SAMSUNG brand filter");
         useFilterPage.clickBrandFilter();
+
+        sleep(5000);
+
+        LOG.info("Check 'In stoc' button");
+        Assert.assertTrue(useFilterPage.isInStocButtonDisplayed(),"Button is not displayed");
+
+        LOG.info("Verify if if 1500_2000 button is displayed");
+        Assert.assertTrue(useFilterPage.isPret1500_2000ButtonDisplayed(),"Button is not displayed");
+
+        LOG.info(" Verify if 'SAMSUNG' button is displayed");
+        Assert.assertTrue(useFilterPage.isSamsungButtonDisplayed(),"SAMSUNG button is not displayed");
+
+        LOG.info("Click sterge filtre");
+        useFilterPage.clickStergeFiltre();
+
+        sleep(5000);
 
 
 

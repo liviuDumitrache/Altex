@@ -39,16 +39,15 @@ public class SignInTest extends BaseTest {
         LOG.info("Click 'Autentificare' button");
         signInPage.clickAutentificareButton();
 
-        Thread.sleep(5000);
 
 
 
 
-//        LOG.info("Click 'Cont' button ");
-//        signInPage.clickContButton();
-//
-//        LOG.info("Click ;Iesi din cont' button");
-//        signInPage.clickIesiDinCont();
+
+
+
+
+
 
 
     }

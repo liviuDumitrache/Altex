@@ -11,7 +11,7 @@ public class SearchBarTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(SearchBarTest.class);
     private String newUrl = getBaseUrl() + "Register.html";
 
-    String cautarTelefon  = "Telefon SAMSUNG Galaxy A34 5G";
+    String cautareTelefon  = "Telefon SAMSUNG Galaxy A34 5G";
 
     @Test
 
@@ -22,7 +22,24 @@ public class SearchBarTest extends BaseTest {
         signInPage.pressPermiteToate();
 
         LOG.info("Introdu produsul cautat ");
-        searchBarPage.insert();
+        searchBarPage.enterText(cautareTelefon);
+
+        LOG.info("Click on magnifying glass");
+        searchBarPage.clickLupa();
+
+        sleep(2000);
+
+        LOG.info("Click on SAMSUNG A 34");
+        searchBarPage.clickTelSamsungA54();
+
+        LOG.info("Click 'Adauga in cos'");
+        searchBarPage.clickAdaugaInCos();
+
+        LOG.info("Click on vezi detalii cos ");
+        searchBarPage.clickVeziDetaliiCos();
+
+        sleep(5000);
+
 
 
 

@@ -45,7 +45,7 @@ public class RegisterTest extends BaseTest {
         LOG.info("Type in parola");
         registerPage.insertParola(parola);
 
-        sleep(5000);
+        sleep(1000);
 
         LOG.info("Click agree terms");
         registerPage.clickAgreeTerms();
@@ -55,17 +55,11 @@ public class RegisterTest extends BaseTest {
 
         sleep(5000);
 
-//        signInPage.clickContButton();
-//
-//        sleep(5000);
-//
-//        LOG.info("Click iesi din cont");
-//        registerPage.clickIesiDinCont();
 
 
 
 
-        sleep(2000L);
+
 
     }
 

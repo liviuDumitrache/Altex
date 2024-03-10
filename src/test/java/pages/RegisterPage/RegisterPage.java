@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.BasePage;
 
-import java.sql.Driver;
+
 
 public class RegisterPage extends BasePage {
     public static final Logger LOG = LoggerFactory.getLogger(RegisterPage.class);

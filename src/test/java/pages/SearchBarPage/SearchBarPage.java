@@ -22,9 +22,11 @@ public class SearchBarPage extends BasePage {
 
     private By insertProdus = By.xpath("//input[@placeholder='Cauta produsul dorit']");
     private By lupa = By.xpath("//button[@type='submit'][@title='Cauta']");
-    private By telSamsungA54 =By.xpath("//span[text()='Telefon SAMSUNG Galaxy A34 5G, 128GB, 6GB RAM, Dual SIM, Awesome Lime']");
+    private By telSamsungA34 =By.xpath("//span[text()='Telefon SAMSUNG Galaxy A34 5G, 128GB, 6GB RAM, Dual SIM, Awesome Lime']");
     private By adaugaInCos = By.xpath("//button/span/span[text()='Adauga in cos']");
     private By veziDetaliiCos = By.xpath("//span[text()='Vezi detalii cos']/parent::span[@class='inline-block  min-w-[140px]']");
+    private By stergeProdus = By.xpath("//span[text()='Sterge']");
+    private By cosulEsteGol = By.xpath("//h1[text()='Nu ai produse in cos.']");
 
 
 
@@ -40,8 +42,8 @@ public class SearchBarPage extends BasePage {
 
 
     public void clickTelSamsungA54(){
-        LOG.info("Click on SAMSUNG A 54");
-        driver.findElement(telSamsungA54).click();
+        LOG.info("Click on SAMSUNG A 34");
+        driver.findElement(telSamsungA34).click();
     }
 
     public void clickAdaugaInCos(){
@@ -52,6 +54,16 @@ public class SearchBarPage extends BasePage {
     public void clickVeziDetaliiCos(){
         LOG.info("Click on vezi detalii cos");
         driver.findElement(veziDetaliiCos).click();
+    }
+
+    public void clickStergeProdus(){
+        LOG.info("click on 'Sterge' produs");
+        driver.findElement(stergeProdus).click();
+    }
+
+    public boolean isNuAiProduseInCosDisplayed(){
+        LOG.info("Verfy if 'Nu ai produse in cos' message is dispalyed");
+        return driver.findElement(cosulEsteGol).isDisplayed();
     }
 
 

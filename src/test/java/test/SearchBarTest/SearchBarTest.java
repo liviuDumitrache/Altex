@@ -2,6 +2,7 @@ package test.SearchBarTest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import test.BaseTest;
 import static pages.BasePage.*;
@@ -31,14 +32,25 @@ public class SearchBarTest extends BaseTest {
 
         LOG.info("Click on SAMSUNG A 34");
         searchBarPage.clickTelSamsungA54();
+        sleep(2000);
+
 
         LOG.info("Click 'Adauga in cos'");
         searchBarPage.clickAdaugaInCos();
 
+        sleep(3000);
+
         LOG.info("Click on vezi detalii cos ");
         searchBarPage.clickVeziDetaliiCos();
+        sleep(2000);
 
-        sleep(5000);
+        LOG.info("Click on 'Sterge' produs ");
+        searchBarPage.clickStergeProdus();
+        sleep(1000);
+
+        LOG.info("Verfy if 'Nu ai produse in cos' is displayed");
+        Assert.assertTrue(searchBarPage.isNuAiProduseInCosDisplayed(),"Nu ai produse in cos message  is not displayed");
+
 
 
 

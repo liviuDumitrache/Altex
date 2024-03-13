@@ -16,11 +16,13 @@ public class FinantareTest extends BaseTest {
     @Test
 
     public void clicFinantare(){
+        sleep(1000);
         LOG.info("Pres permite toate");
         signInPage.pressPermiteToate();
 
         LOG.info("Click 'Finantare' button");
         finantarePage.clickFinantareButton();
+        sleep(1000);
 
         LOG.info("Click on 'Carduri de credit' button");
         finantarePage.clickCarduriDeCredit();
@@ -37,10 +39,11 @@ public class FinantareTest extends BaseTest {
 
         LOG.info("Click 'Vezi regulament' button");
         finantarePage.clickVeziRegulament();
+        sleep(1000);
 
         LOG.info("Verfy if Regulament campanie is displayed in new tab");
         Assert.assertTrue(finantarePage.isRegulamentDisplayed(),"Regulament campanie is not opend in new tab");
-        sleep(3000);
+        sleep(5000);
 
 
 

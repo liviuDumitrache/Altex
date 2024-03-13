@@ -26,6 +26,7 @@ public class SignInTest extends BaseTest {
 
         LOG.info("Click 'Cont' button ");
         signInPage.clickContButton();
+        Thread.sleep(1000);
 
 
         LOG.info("Insert Email ");

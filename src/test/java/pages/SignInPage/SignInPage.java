@@ -22,7 +22,7 @@ public class SignInPage extends BasePage {
 
     private By logo = By.xpath("//a[@class='Header-logo block bg-no-repeat ']");
     private By contButton = By.xpath("//span [text()='Cont']");
-    private By emailField = By.xpath("//input[@label='Introdu adresa de email']");
+    private By emailField = By.xpath("//div[@class='pb-2']//input[@autocomplete='username']");
     private By passwordField = By.xpath("//input[@name='password']");
     private By autentificareButton = By.xpath("//button[@type='submit']/span/span[text()='Autentificare']");
     private By iesiDinCont = By.xpath("//a[text()='Iesi din cont']");

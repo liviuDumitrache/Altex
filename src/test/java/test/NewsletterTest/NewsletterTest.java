@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.NewsletterPage.NewsletterPage;
 import test.BaseTest;
 
 import static pages.BasePage.getBaseUrl;
@@ -34,7 +33,7 @@ public class NewsletterTest extends BaseTest {
         newsletterPage.clickAbonezaTeButton();
 
         LOG.info("Verify if succes message is displayed");
-        Assert.assertTrue(newsletterPage.isTe_aiAbonatDisplayed(),"Succes mesage is not displayed");
+        Assert.assertTrue(newsletterPage.isTe_aiAbonatDisplayed(), "Succes mesage is not displayed");
 
 
     }

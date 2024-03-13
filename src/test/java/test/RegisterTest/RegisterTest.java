@@ -13,7 +13,7 @@ public class RegisterTest extends BaseTest {
 
     String prenume = "Florin";
     String nume = "Pop";
-    String email = "vefidox922@aersm.com";
+    String email ="wobis71195@azduan.com";
     String numarDeTelefon = "0745113679";
     String parola = "Parola123";
 
@@ -52,6 +52,10 @@ public class RegisterTest extends BaseTest {
 
         LOG.info("Click intregistrare button");
         registerPage.clickRegister();
+        sleep(1000);
+
+//        LOG.info("Click iesi din cont ");
+//        registerPage.clickIesiDinCont();
 
         sleep(5000);
 

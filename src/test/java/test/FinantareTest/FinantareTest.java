@@ -24,7 +24,7 @@ public class FinantareTest extends BaseTest {
 
         LOG.info("Click on 'Carduri de credit' button");
         finantarePage.clickCarduriDeCredit();
-        sleep(1000);
+        sleep(3000);
 
         LOG.info("Verfy if BRD card image is displayed");
         Assert.assertTrue(finantarePage.isBrdCardDisplayed(),"BRD card image is not displayed");

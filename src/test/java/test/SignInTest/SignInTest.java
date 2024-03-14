@@ -18,10 +18,10 @@ public class SignInTest extends BaseTest {
 
         LOG.info("Verfy if logo is displayed");
         Assert.assertTrue(signInPage.isLogoDisplayed(), "Logo is not displayed");
+        Thread.sleep(1000);
 
         LOG.info("Pres permite toate");
         signInPage.pressPermiteToate();
-
 
 
         LOG.info("Click 'Cont' button ");
@@ -39,22 +39,6 @@ public class SignInTest extends BaseTest {
 
         LOG.info("Click 'Autentificare' button");
         signInPage.clickAutentificareButton();
-
-        Thread.sleep(5000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

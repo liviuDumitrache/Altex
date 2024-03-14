@@ -15,7 +15,7 @@ public class UseFilterTest extends BaseTest {
 
 
     @Test
-            public void useFilter(){
+    public void useFilter() {
 
         sleep(1000);
 
@@ -28,7 +28,6 @@ public class UseFilterTest extends BaseTest {
 
         LOG.info("Click 'TV,Audio-Video,Foto' button");
         useFilterPage.clickTvAudioFotoButton();
-
 
 
         LOG.info("Click 'Televizoare' button");
@@ -53,35 +52,21 @@ public class UseFilterTest extends BaseTest {
         sleep(5000);
 
         LOG.info("Check 'In stoc' button");
-        Assert.assertTrue(useFilterPage.isInStocButtonDisplayed(),"Button is not displayed");
+        Assert.assertTrue(useFilterPage.isInStocButtonDisplayed(), "Button is not displayed");
         sleep(1000);
 
         LOG.info("Verify if if 1500_2000 button is displayed");
-        Assert.assertTrue(useFilterPage.isPret1500_2000ButtonDisplayed(),"Button is not displayed");
+        Assert.assertTrue(useFilterPage.isPret1500_2000ButtonDisplayed(), "Button is not displayed");
         sleep(1000);
 
         LOG.info(" Verify if 'SAMSUNG' button is displayed");
-        Assert.assertTrue(useFilterPage.isSamsungButtonDisplayed(),"SAMSUNG button is not displayed");
+        Assert.assertTrue(useFilterPage.isSamsungButtonDisplayed(), "SAMSUNG button is not displayed");
 
         LOG.info("Click sterge filtre");
         useFilterPage.clickStergeFiltre();
 
 
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
 
 
 }

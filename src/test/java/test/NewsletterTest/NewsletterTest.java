@@ -19,6 +19,7 @@ public class NewsletterTest extends BaseTest {
     @Test
 
     public void newsletter() {
+        sleep(1000);
         LOG.info("Pres permite toate");
         signInPage.pressPermiteToate();
 

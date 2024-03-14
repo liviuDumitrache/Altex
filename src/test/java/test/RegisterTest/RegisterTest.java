@@ -1,11 +1,13 @@
 package test.RegisterTest;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 import test.BaseTest;
 
-import static pages.BasePage.*;
+import static pages.BasePage.getBaseUrl;
+import static pages.BasePage.sleep;
 
 public class RegisterTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(RegisterTest.class);
@@ -13,13 +15,13 @@ public class RegisterTest extends BaseTest {
 
     String prenume = "Florin";
     String nume = "Pop";
-    String email ="wobis71195@azduan.com";
-    String numarDeTelefon = "0745113679";
+    String email = "ceva.altceva@" + RandomStringUtils.randomAlphanumeric(5) + ".com";
+    String numarDeTelefon = "0769143522";
     String parola = "Parola123";
 
     @Test
 
-    public void register(){
+    public void register() {
         sleep(1000);
         LOG.info("Pres permite toate");
         signInPage.pressPermiteToate();
@@ -52,21 +54,12 @@ public class RegisterTest extends BaseTest {
 
         LOG.info("Click intregistrare button");
         registerPage.clickRegister();
-        sleep(1000);
-
-//        LOG.info("Click iesi din cont ");
-//        registerPage.clickIesiDinCont();
-
-        sleep(5000);
-
-
 
 
 
 
 
     }
-
 
 
 }

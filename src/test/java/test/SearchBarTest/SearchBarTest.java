@@ -6,8 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import test.BaseTest;
 
-import static pages.BasePage.*;
 import static pages.BasePage.getBaseUrl;
+import static pages.BasePage.sleep;
 
 public class SearchBarTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(SearchBarTest.class);
@@ -64,39 +64,6 @@ public class SearchBarTest extends BaseTest {
 
 
         sleep(3000);
-
-
-//        LOG.info("Introdu produsul cautat ");
-//        searchBarPage.enterText(cautareTelefon);
-
-//        LOG.info("Click on magnifying glass");
-//        searchBarPage.clickLupa();
-
-//        LOG.info("Click on desired product");
-//        searchBarPage.clickProdus();
-
-
-
-//        LOG.info("Click on SAMSUNG S23");
-//        searchBarPage.clickTelSamsungS23();
-//        sleep(2000);
-
-
-//        LOG.info("Click 'Adauga in cos'");
-//        searchBarPage.clickAdaugaInCos();
-//
-//        sleep(3000);
-//
-//        LOG.info("Click on vezi detalii cos ");
-//        searchBarPage.clickVeziDetaliiCos();
-//        sleep(2000);
-//
-//        LOG.info("Click on 'Sterge' produs ");
-//        searchBarPage.clickStergeProdus();
-//        sleep(1000);
-//
-//        LOG.info("Verfy if 'Nu ai produse in cos' is displayed");
-//        Assert.assertTrue(searchBarPage.isNuAiProduseInCosDisplayed(),"Nu ai produse in cos message  is not displayed");
 
 
     }

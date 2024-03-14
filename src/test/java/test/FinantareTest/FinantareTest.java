@@ -6,7 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import test.BaseTest;
 
-import static pages.BasePage.*;
+import static pages.BasePage.getBaseUrl;
+import static pages.BasePage.sleep;
 
 
 public class FinantareTest extends BaseTest {
@@ -15,7 +16,7 @@ public class FinantareTest extends BaseTest {
 
     @Test
 
-    public void clicFinantare(){
+    public void clicFinantare() {
         sleep(1000);
         LOG.info("Pres permite toate");
         signInPage.pressPermiteToate();
@@ -26,31 +27,30 @@ public class FinantareTest extends BaseTest {
 
         LOG.info("Click on 'Carduri de credit' button");
         finantarePage.clickCarduriDeCredit();
-        sleep(3000);
+        sleep(1000);
 
         LOG.info("Verfy if BRD card image is displayed");
-        Assert.assertTrue(finantarePage.isBrdCardDisplayed(),"BRD card image is not displayed");
+        Assert.assertTrue(finantarePage.isBrdCardDisplayed(), "BRD card image is not displayed");
+        sleep(1000);
 
         LOG.info("Verfy if 'Banca Transilvania' card is displayed");
-        Assert.assertTrue(finantarePage.isTransilvaniaCardDisplayed(),"'BancaTransilvania' card image is not displayed");
+        Assert.assertTrue(finantarePage.isTransilvaniaCardDisplayed(), "'BancaTransilvania' card image is not displayed");
+        sleep(1000);
 
         LOG.info("Vreify if 'ING' vard image is displayed");
-        Assert.assertTrue(finantarePage.isIngCardDisplayed(),"'ING' card image is not dysplayed");
+        Assert.assertTrue(finantarePage.isIngCardDisplayed(), "'ING' card image is not dysplayed");
+        sleep(1000);
 
         LOG.info("Click 'Vezi regulament' button");
         finantarePage.clickVeziRegulament();
         sleep(1000);
 
         LOG.info("Verfy if Regulament campanie is displayed in new tab");
-        Assert.assertTrue(finantarePage.isRegulamentDisplayed(),"Regulament campanie is not opend in new tab");
-        sleep(5000);
-
-
+        Assert.assertTrue(finantarePage.isRegulamentDisplayed(), "Regulament campanie is not opend in new tab");
+        sleep(1000);
 
 
     }
-
-
 
 
 }

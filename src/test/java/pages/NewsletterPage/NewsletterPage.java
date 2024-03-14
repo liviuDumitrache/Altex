@@ -22,28 +22,25 @@ public class NewsletterPage extends BasePage {
     private By aboneazaTeButton = By.xpath("//span[text()='Aboneaza-te']");
 
 
-
-    public void clickAbonare(){
+    public void clickAbonare() {
         LOG.info("Click 'Abonare newsletter'button");
         driver.findElement(abonareNewsletter).click();
     }
 
-    public void inputEmail(String email ){
+    public void inputEmail(String email) {
         LOG.info("Input email ");
         driver.findElement(emailField).sendKeys(email);
     }
 
-    public void clickAbonezaTeButton(){
+    public void clickAbonezaTeButton() {
         LOG.info("Click'Aboneaza-te' button");
         driver.findElement(aboneazaTeButton).click();
     }
 
-    public boolean isTe_aiAbonatDisplayed(){
+    public boolean isTe_aiAbonatDisplayed() {
         LOG.info("Is succes message displayed");
         return driver.findElement(aboneazaTeButton).isDisplayed();
     }
-
-
 
 
 }

@@ -1,7 +1,6 @@
 package pages.SearchBarPage;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.BasePage;
@@ -30,16 +29,6 @@ public class SearchBarPage extends BasePage {
     private By veziDetaliiCos = By.xpath("(//span[text()=\"Vezi detalii cos\"])[1]");
     private By stergeProdus = By.xpath("//span[text()='Sterge']");
     private By cosulEsteGol = By.xpath("//h1[text()='Nu ai produse in cos.']");
-
-
-//    private By insertProdus = By.xpath("//input[@placeholder='Cauta produsul dorit']");
-//    private By lupa = By.xpath("//button[@type='submit'][@title='Cauta']");
-//    private By produs = By.xpath("//div[text()='Telefon SAMSUNG Galaxy S23 FE 5G, 256GB, 8GB RAM, Dual SIM, Mint']");
-//    private By telSamsung =By.xpath("//span[text()='Telefon SAMSUNG Galaxy S23 FE 5G, 256GB, 8GB RAM, Dual SIM, Mint']");
-//    private By adaugaInCos = By.xpath("//button/span/span[text()='Adauga in cos']");
-//    private By veziDetaliiCos = By.xpath("(//span[text()=\"Vezi detalii cos\"])[2]");
-//    private By stergeProdus = By.xpath("//span[text()='Sterge']");
-//    private By cosulEsteGol = By.xpath("//h1[text()='Nu ai produse in cos.']");
 
 
     public void clickTelefoaneTablete() {
@@ -86,49 +75,6 @@ public class SearchBarPage extends BasePage {
         LOG.info("Verfy if 'Nu ai produse in cos' message is dispalyed");
         return driver.findElement(cosulEsteGol).isDisplayed();
     }
-
-
-
-//    public void enterText (String cautareTelefon ){
-//        LOG.info("Insert produsul dorit");
-//        driver.findElement(insertProdus).sendKeys(cautareTelefon);
-//    }
-
-//    public void clickLupa() {
-//        LOG.info("Click on magnifying glass");
-//        driver.findElement(lupa).click();
-//    }
-
-
-//    public void clickProdus(){
-//        LOG.info("Click on desired product");
-//        driver.findElement(produs).click();
-//    }
-//
-//    public void clickTelSamsungS23(){
-//        LOG.info("Click on SAMSUNG S23");
-//        driver.findElement(telSamsung).click();
-//    }
-
-//    public void clickAdaugaInCos(){
-//        LOG.info("Click 'Adauga in cos'");
-//        driver.findElement(adaugaInCos).click();
-//    }
-//
-//    public void clickVeziDetaliiCos(){
-//        LOG.info("Click on vezi detalii cos");
-//        driver.findElement(veziDetaliiCos).click();
-//    }
-//
-//    public void clickStergeProdus(){
-//        LOG.info("click on 'Sterge' produs");
-//        driver.findElement(stergeProdus).click();
-//    }
-//
-//    public boolean isNuAiProduseInCosDisplayed(){
-//        LOG.info("Verfy if 'Nu ai produse in cos' message is dispalyed");
-//        return driver.findElement(cosulEsteGol).isDisplayed();
-//    }
 
 
 }

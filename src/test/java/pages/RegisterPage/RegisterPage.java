@@ -27,7 +27,8 @@ public class RegisterPage extends BasePage {
     private By parola2 = By.xpath("//input[@name='password_confirm']");
     private By agreeTerms = By.xpath("//span[@class='checkbox-control flex-none w-5 h-5 p-1 mr-2 border-gray-light border rounded-4px bg-white is-required']");
     private By register = By.xpath("//span[text()='Inregistrare']");
-    private By iesiDinCont = By.xpath("//a[text()='Iesi din cont']");
+    private By mesajEroare = By.xpath("");
+
 
 
 
@@ -72,10 +73,8 @@ public class RegisterPage extends BasePage {
         driver.findElement(register).click();
     }
 
-//    public void clickIesiDinCont(){
-//        LOG.info("Click iesi din cont");
-//        driver.findElement(iesiDinCont).click();
-//    }
+
+
 
 
 

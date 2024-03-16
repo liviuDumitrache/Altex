@@ -34,6 +34,7 @@ public class NewsletterTest extends BaseTest {
 
         LOG.info("Click 'Aboneaza-te' button");
         newsletterPage.clickAbonezaTeButton();
+        sleep(2000);
 
         LOG.info("Verify if succes message is displayed");
         Assert.assertTrue(newsletterPage.isTe_aiAbonatDisplayed(), "Succes mesage is not displayed");

@@ -20,6 +20,7 @@ public class NewsletterPage extends BasePage {
     private By abonareNewsletter = By.xpath("//a[text()='Abonare newsletter']");
     private By emailField = By.xpath("//div[@class='md:mr-4 md:min-w-280px']//input[@name='email']");
     private By aboneazaTeButton = By.xpath("//span[text()='Aboneaza-te']");
+    private By te_aiAbonat =By.xpath("//h2[text()='Te-ai abonat cu succes la newsletter-ul Altex.ro']");
 
 
     public void clickAbonare() {
@@ -39,7 +40,7 @@ public class NewsletterPage extends BasePage {
 
     public boolean isTe_aiAbonatDisplayed() {
         LOG.info("Is succes message displayed");
-        return driver.findElement(aboneazaTeButton).isDisplayed();
+        return driver.findElement(te_aiAbonat).isDisplayed();
     }
 
 

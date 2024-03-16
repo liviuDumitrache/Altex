@@ -1,5 +1,6 @@
 package test.NewsletterTest;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -13,7 +14,7 @@ public class NewsletterTest extends BaseTest {
     public static final Logger LOG = LoggerFactory.getLogger(NewsletterTest.class);
     private String newUrl = getBaseUrl() + "Register.html";
 
-    String email = "vefidox922@aersm.com";
+    String email = "ceva.altceva@" + RandomStringUtils.randomAlphanumeric(5) + ".com";
 
 
     @Test
@@ -29,6 +30,7 @@ public class NewsletterTest extends BaseTest {
 
         LOG.info("Input email");
         newsletterPage.inputEmail(email);
+
 
         LOG.info("Click 'Aboneaza-te' button");
         newsletterPage.clickAbonezaTeButton();

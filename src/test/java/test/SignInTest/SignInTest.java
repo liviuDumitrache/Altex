@@ -41,6 +41,10 @@ public class SignInTest extends BaseTest {
         signInPage.clickAutentificareButton();
 
 
+
+
+
+
     }
 
 

@@ -62,11 +62,7 @@ public class SearchBarTest extends BaseTest {
         LOG.info("Verfy if 'Nu ai produse in cos' is displayed");
         Assert.assertTrue(searchBarPage.isNuAiProduseInCosDisplayed(), "Nu ai produse in cos message  is not displayed");
 
-
         sleep(3000);
-
-
     }
-
 
 }

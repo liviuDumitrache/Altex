@@ -49,7 +49,7 @@ public class UseFilterTest extends BaseTest {
         LOG.info("Click SAMSUNG brand filter");
         useFilterPage.clickBrandFilter();
 
-        sleep(5000);
+        sleep(2000);
 
         LOG.info("Check 'In stoc' button");
         Assert.assertTrue(useFilterPage.isInStocButtonDisplayed(), "Button is not displayed");
@@ -65,8 +65,5 @@ public class UseFilterTest extends BaseTest {
         LOG.info("Click sterge filtre");
         useFilterPage.clickStergeFiltre();
 
-
     }
-
-
 }

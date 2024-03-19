@@ -56,12 +56,5 @@ public class RegisterTest extends BaseTest {
         LOG.info("Click intregistrare button");
         registerPage.clickRegister();
 
-
-
-
-
-
     }
-
-
 }

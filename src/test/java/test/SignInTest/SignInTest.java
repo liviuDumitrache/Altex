@@ -40,12 +40,5 @@ public class SignInTest extends BaseTest {
         LOG.info("Click 'Autentificare' button");
         signInPage.clickAutentificareButton();
 
-
-
-
-
-
     }
-
-
 }

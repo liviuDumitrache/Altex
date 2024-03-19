@@ -47,10 +47,7 @@ public class FinantareTest extends BaseTest {
 
         LOG.info("Verfy if Regulament campanie is displayed in new tab");
         Assert.assertTrue(finantarePage.isRegulamentDisplayed(), "Regulament campanie is not opend in new tab");
-        sleep(1000);
-
+        sleep(2000);
 
     }
-
-
 }

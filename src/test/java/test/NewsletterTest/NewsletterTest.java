@@ -39,7 +39,6 @@ public class NewsletterTest extends BaseTest {
         LOG.info("Verify if succes message is displayed");
         Assert.assertTrue(newsletterPage.isTe_aiAbonatDisplayed(), "Succes mesage is not displayed");
 
-
     }
 
 }
